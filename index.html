@@ -18,7 +18,7 @@
         私たちについて
     </h2>
     <div>
-        <div class="our3">
+       <div class="our3">
             <h3 class="our2">
         担任の先生はいつも「想像してごらん」と私たちにいいます。そんな私たちがこどもでも楽しめる居酒屋があればな、と想像してできた居酒屋です。
 
@@ -30,11 +30,11 @@
             </h3>
             <img src="image/logo_full.bmp" alt="imagine_logo_full">
         </div>
-    </div>>
+    </div>
   </section>
   <section class="main">
     <h2 id="menu">メニュー</h2>
-    <div>
+    <div class="menu">
       <h3 class="menu">
         焼き鳥<br>
         <br>
@@ -57,33 +57,40 @@
         甘いものも欲しいよね。<br>おやつ、デザートにどうぞ。
       </h3>
     </div>
-    <h2 id="allergy">アレルギー情報</h2>
-    <div class="allergy">
-      <h3 class="allergy_menu">
-        焼き鳥<br>
-        <br>
-        鶏肉、小麦、大豆<br>
-        （製造ラインでは、卵乳成分，牛肉，<br>オレンジ、りんご、ゼラチン、<br>ごまを含む製品を生産）
-      </h3>
-      <h3 class="allergy_menu">
-        こどもビール<br>
-        <br>
-        無し<br>
-        （りんごエキスを使用）
-      </h3>
-      <h3 class="allergy_menu">
-        ごま団子<br>
-        <br>
-        小麦、ごま
-        （製造ラインでは、卵、落花生，<br>えび、いか、大豆，鶏肉，豚肉，<br>ゼラチンを含む製品を生産）
-      </h3>
+    <input type="checkbox" id="popup">
+    <label class="popup_open" for="popup">アレルギー情報を見る</label>
+    <div class="popup_overlay">
+      <div class="popup_window">
+        <h2 id="allergy">アレルギー情報</h2>
+        <div class="allergy">
+          <h3 class="allergy_menu">
+            焼き鳥<br>
+            <br>
+            鶏肉、小麦、大豆<br>
+            （製造ラインでは、卵乳成分，牛肉，<br>オレンジ、りんご、ゼラチン、<br>ごまを含む製品を生産）
+          </h3>
+          <h3 class="allergy_menu">
+            こどもビール<br>
+            <br>
+            無し<br>
+            （りんごエキスを使用）
+          </h3>
+          <h3 class="allergy_menu">
+            ごま団子<br>
+            <br>
+            小麦、ごま
+            （製造ラインでは、卵、落花生，<br>えび、いか、大豆，鶏肉，豚肉，<br>ゼラチンを含む製品を生産）
+          </h3>
+        </div>
+        <label class="popup_close" for="popup">✕</label>
+      </div>
     </div>
   </section>
   <footer>
     <img class="footer_logo" src="image/simple_logo.png" alt="simple_logo">
     <a href="index.html" class="footer_top">こども居酒屋「想像|IMAGINE」</a>
     <a href="index.html#menu" class="footer_menu">メニュー</a>
-    <a href="index.html#allergy" class="footer_allergy">アレルギー情報</a>
+    <label class="footer_allergy" for="popup">アレルギー情報</label>
   </footer>
 </html>
 <!--
