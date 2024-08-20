@@ -10,6 +10,9 @@
 .entrance_logo{
     width: 300px;
 }
+section{
+    font-family: sans-serif;
+}
 h1{
     font-size: 80px
 }
@@ -34,9 +37,9 @@ img {
 }
 .our3{
     align-items: center;
+    display: flex;
 }
 div {
-    display: flex;
     text-align: center;
 }
 table{
@@ -56,6 +59,54 @@ th{
     padding-left: 30px;
     margin-bottom:150px ;
 }
+#popup {
+    display: none;
+}
+.popup_open{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    width: 290px;
+    font-weight: bold;
+    margin-top: 30px;
+    border: black;
+    border-style: solid;
+    border-radius: 30px;
+    margin-right:auto; margin-left:auto
+}
+.popup_open:hover{
+    background-color: rgb(194, 194, 194);
+}
+.popup_overlay{
+    display: none;
+}
+#popup:checked ~ .popup_overlay{
+    display: block;
+    z-index: 99999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+.popup_window{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10vh;
+    border-radius: 30px;
+}
+.popup_close{
+    position: absolute;
+    top: 11vh;
+    right: 11%;
+    font-size: 25px;
+    font-weight:bold;
+}
 footer {
     background-color: black;
     color: white;
@@ -70,6 +121,7 @@ footer {
     display: flex;
     box-shadow:0px 0px 15px black;
     align-items: center;
+    font-family: sans-serif;
 }
 .footer_logo{
     width: 90px;
@@ -92,12 +144,19 @@ text-decoration: none;
 font-size: 25px;
 margin-left: 35px;
 }
-.menu{
-    padding-left: 12%;
+h3.menu{
+    width: 33.3%;
+}
+div.menu{
+    display: flex;
+}
+#allergy{
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 .allergy{
     display: flex;
 }
 .allergy_menu{
-    padding-left: 180px;
+    width: 33.3%;
 }
